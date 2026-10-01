@@ -195,6 +195,36 @@ footer a {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.featured-project {
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: none;
+}
+
+.featured-project h3 {
+    margin-top: 0;
+}
+
+.featured-project p {
+    margin: 8px 0;
+}
+
+@media (max-width: 800px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 #projectButton {
     width: auto;
     margin-left: 10px;
