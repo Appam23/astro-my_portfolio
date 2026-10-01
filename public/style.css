@@ -149,6 +149,10 @@ footer a {
     margin-bottom: 15px;
 }
 
+.hero h1 {
+    margin-bottom: 10px;
+}
+
 .hero p {
     font-size: 1.05rem;
     margin-bottom: 20px;
@@ -166,6 +170,27 @@ footer a {
 
 .hero-button:hover {
     background: #1d4ed8;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-button-secondary {
+    background: #0f172a;
+}
+
+.hero-button-secondary:hover {
+    background: #1e293b;
+}
+
+.hero-skills {
+    color: #334155;
+    font-weight: bold;
+    margin-top: 25px;
 }
 
 .about-grid {
@@ -236,6 +261,27 @@ footer a {
     margin-bottom: 20px;
 }
 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-group {
+    padding: 18px;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    background: #f8fafc;
+}
+
+.skill-group h3 {
+    margin-top: 0;
+}
+
+.skill-group .skill-list {
+    margin-bottom: 0;
+}
+
 .skill-tag {
     background: #dbeafe;
     color: #1e3a8a;
@@ -243,6 +289,13 @@ footer a {
     border-radius: 999px;
     font-weight: bold;
 }
+
+@media (max-width: 700px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .contact-card {
     border: 1px solid #dbeafe;
 }
