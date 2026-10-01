@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact | Leihaopam Leisan">
+    <section id="contact" class="contact-card">
+        <h2>Contact Me</h2>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <label for="reason">Reason:</label>
+            <select id="reason" name="reason">
+                <option value="job">Job</option>
+                <option value="internship">Internship</option>
+                <option value="project">Project</option>
+            </select>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</Layout>
